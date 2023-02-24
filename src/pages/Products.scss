@@ -1,4 +1,29 @@
 .sec_Products{
     display: flex;
     flex-wrap: wrap;
+
+    >article{
+        width: 100vw;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        img{
+            width: 90vw;
+            height: 50px;
+            padding-left: 3vw;
+            margin-bottom: -70px;   /* auf Linie zu h2 bringen */
+        }
+
+        .h2_Products  {
+            padding-left: 7vw;
+            color: rgb(34, 34, 34,0.75);
+
+        }
+
+    }
+    
+
 }
+

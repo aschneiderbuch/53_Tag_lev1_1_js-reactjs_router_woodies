@@ -15,7 +15,7 @@ const Nav = () => {
         <section className="sec_Nav">
 
             <article>
-                <img src={logo} alt="" />
+                <img src={logo} alt="Firmen logo Woodies" />
             </article>
             <article>
                 <Link to="/">Home</Link>

@@ -1,4 +1,20 @@
 .sec_Products {
   display: flex;
   flex-wrap: wrap;
+}
+.sec_Products > article {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.sec_Products > article img {
+  width: 90vw;
+  height: 50px;
+  padding-left: 3vw;
+  margin-bottom: -70px; /* auf Linie zu h2 bringen */
+}
+.sec_Products > article .h2_Products {
+  padding-left: 7vw;
+  color: rgba(34, 34, 34, 0.75);
 }/*# sourceMappingURL=Products.css.map */

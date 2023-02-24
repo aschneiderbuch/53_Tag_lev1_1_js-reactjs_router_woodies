@@ -3,8 +3,10 @@ import { Link } from "react-router-dom";
 
 
 // import Footer
-import ButtonShopNow from "../components/button/ButtonShopNow.jsx";
 import Footer from "../components/footer/Footer.jsx";
+
+// import Logo
+import Logo_klein from "../img/Logo_klein.png";
 
 // import css
 import "./Products.scss";
@@ -26,49 +28,35 @@ const Products = () => {
     console.log(imgSrc2);
     const imgSrc = dataArrObj.dataArrObj[0].imgSrc
     console.log(imgSrc);
-    
+
 
     return (
 
         <section className="sec_Products">
 
-            <h1>Products</h1>
-
-
-            <h2> hallo</h2>
-
-            <article /* style={ { backgroundImage: ` url(${imgSrc}) ` } } */  >
-                <p >image als hintergrund</p>
-                <h2>Jenson</h2>
-                <p>link bauen</p>
-
-                <Link to="/products/Jenson"> Shop now zu Jenson </Link>
-
-                <ButtonShopNow> </ButtonShopNow>
-
-{/* davor // ! .map drüber lassen  und um alles   { }  herum, da js */}
-                <ProductsSchabloneItem
-                style={{ backgroundImage: `url(${imgSrc2})` }}
-                titel={dataArrObj.dataArrObj[0].productTitel}
-                /* titel={weg zu titel im map} */
-                to={`/products/${dataArrObj.dataArrObj[0].productTitel}`}
-
-                ></ProductsSchabloneItem>
-
+            <article> 
+                <img src={Logo_klein} alt="Logo klein" />
+                <h2 className="h2_Products">What we have</h2>  
             </article>
 
-            <article>
-                <p>image als hintergrund</p>
-                <h2>Deon</h2>
-                <p>link bauen</p>
-            </article>
+                {/*    <ButtonShopNow> </ButtonShopNow> */}
 
-            <article>
-                <p>image als hintergrund</p>
-                <h2>Krisha</h2>
-                <p>link bauen</p>
-            </article>
+                {/* davor // ! .map drüber lassen  und um alles   { }  herum, da js */}
+                {/* // ! Vorischt durch den export default wird um das dataArrObj nochmal ein 
+                // !  Objekt drum herum gepackt  :-(    */}
+                {dataArrObj.dataArrObj.map((itemObj, index) => {
+                    return <ProductsSchabloneItem
+                        key={index}
+                        key_={itemObj.uuid}
+                        style={{ backgroundImage: `url(${itemObj.imgSrc})` }}
+                        titel={itemObj.productTitel}
+                        /* titel={weg zu titel im map} */
+                        to={`/products/${itemObj.productTitel}`}
 
+                    ></ProductsSchabloneItem>
+                })}
+
+          
 
 
 
@@ -79,4 +67,7 @@ const Products = () => {
 }
 
 export default Products
+
+
+
 

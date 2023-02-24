@@ -1,3 +1,40 @@
-.sec_ProductsSchabloneItem h1 {
+.sec_ProductsSchabloneItem {
+  padding: 10px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  text-align: center;
+}
+.sec_ProductsSchabloneItem > article {
+  width: 280px;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+}
+.sec_ProductsSchabloneItem h2 {
+  align-self: flex-start;
+  padding: 10px 0 0 25px; /* Abstand oben und links */
+  color: rgba(34, 34, 34, 0.75);
+}
+.sec_ProductsSchabloneItem a { /* Link -> Button */
+  align-self: flex-end;
   color: red;
+  margin: 0 25px 10px 0; /* Abstand unten und rechts */
+  background-color: #DAA520;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid yellow;
+  color: white;
+  text-decoration: none;
+}
+.sec_ProductsSchabloneItem a:hover {
+  scale: 1.2;
+}
+.sec_ProductsSchabloneItem a:active {
+  color: green;
+  scale: 5;
 }/*# sourceMappingURL=ProductsSchabloneItem.css.map */

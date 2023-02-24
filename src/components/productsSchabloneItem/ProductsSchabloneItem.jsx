@@ -16,10 +16,8 @@ const ProductsSchabloneItem = (props) => {
 
         <section className="sec_ProductsSchabloneItem">
             <article style={props.style}>
-                <p> imgSrc2 - backImg artic</p>
                 <h2>{props.titel}</h2>
-                <p></p>
-                <Link to={props.to}> titel = Jenson</Link> 
+                <Link to={props.to}>Shop now</Link> 
  
 
             </article>

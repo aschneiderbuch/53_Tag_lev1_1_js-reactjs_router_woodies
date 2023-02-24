@@ -3,13 +3,33 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: rgb(240, 240, 240);
+  width: 100vw;
+  overflow: hidden;
+  margin-top: 30px;
 }
-.sec_Footer p:nth-of-type(1) {
+.sec_Footer article:nth-of-type(1) {
+  padding-left: 10vw;
+}
+.sec_Footer article:nth-of-type(1) p:nth-of-type(1) { /* Style Strich */
   width: 80vw;
   height: 2px;
   background-color: rgb(244, 202, 152);
   margin: left;
+  margin-top: 50px;
 }
-.sec_Footer h2 {
-  color: yellowgreen;
+.sec_Footer article:nth-of-type(1) p {
+  color: rgba(34, 34, 34, 0.75);
+}
+.sec_Footer article:nth-of-type(1) p:nth-of-type(3) {
+  font-size: 0.8rem;
+}
+.sec_Footer article:nth-of-type(1) p:nth-of-type(4) {
+  font-size: 0.8rem;
+}
+.sec_Footer article:nth-of-type(2) {
+  text-align: center;
+  color: rgba(34, 34, 34, 0.75);
+}
+.sec_Footer article:nth-of-type(2) p {
+  font-size: 0.8rem;
 }/*# sourceMappingURL=Footer.css.map */

@@ -1,7 +1,9 @@
 
 
-// import 
+// import img
 import bild_Footer from "../../img/Footer.png";
+import logo from "../../img/Logo.png";
+
 
 // import css
 import "./Footer.scss";
@@ -15,17 +17,17 @@ const Footer = () => {
 
 <section style={ {backgroundImage: `url( ${ bild_Footer } )`} }  className="sec_Footer">
 
-<h2>Footer</h2>
+<article>
+<p></p>  {/* macht den Style Strich */}
 
-<p></p>
-
-<h2>WOODIES</h2>
-<p>(012) 8967453</p>
+<img src={logo} alt="Firmen logo Woodies" /><p>(012) 8967453</p>
 <p>woodies@gmail.com</p>
 <p>Jakarta, Indonesia</p>
+</article>
 
+<article>
 <p>©️ 2020 WOODIES</p>
-
+</article>
 
 </section>
 

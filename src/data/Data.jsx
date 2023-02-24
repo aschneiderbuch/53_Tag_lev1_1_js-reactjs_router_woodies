@@ -23,9 +23,16 @@ for (let i = 0; i < productTitelArr.length; i++){
 console.log(uuidArr)
 
 // Array imgSrc
+// !!! geht nur mit imgSrcArr  hart die Bilder einfügen,
+// !!! da dann die Bilder auch beim durchreichen 
+// !!! immer noch auf den richtigen Endpunkt zeigen
 const imgSrcArr = [bild_0, bild_1, bild_2];
 
 // Array imgSrc2 
+// !!!!!!!! geht nicht   Bilder haben einen Absoluten Pfad, 
+// !!!!! der später dann beim Durchreichen nicht mehr passt   :-(
+    // evtl.    ->  mit if els hart durch die bild_0 von oben ersetzen  
+    //               damit es dynamisch bleibt
 const imgSrcArr2 = [];
 for (let i = 0; i < productTitelArr.length; i++){
     imgSrcArr2.push( { [ `bild_${i}` ]: `../img/bild_${i}.png` } )
