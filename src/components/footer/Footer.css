@@ -1,0 +1,15 @@
+.sec_Footer {
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: rgb(240, 240, 240);
+}
+.sec_Footer p:nth-of-type(1) {
+  width: 80vw;
+  height: 2px;
+  background-color: rgb(244, 202, 152);
+  margin: left;
+}
+.sec_Footer h2 {
+  color: yellowgreen;
+}/*# sourceMappingURL=Footer.css.map */

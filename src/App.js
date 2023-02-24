@@ -1,23 +1,55 @@
-import logo from './logo.svg';
+// import Library für BrowserRouten usw
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+
+
+// import css 
 import './App.css';
+// import Footer from './components/footer/Footer.jsx';
+import Nav from './components/nav/Nav.jsx';
+
+
+// import pages  für routes
+import Home from './pages/Home.jsx';
+import About from './pages/About.jsx';
+// import Jenson from './pages/Jenson.jsx';
+import Products from './pages/Products.jsx';
+import ProductsDetails from "./pages/ProductsDetails.jsx";
+
+
+//import components 
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <>
+
+        <BrowserRouter>
+
+          <Nav></Nav>    {/* hier sind die quasi a-tags zu den Seiten drin */}
+
+          <Routes>
+
+            {/* // ! wenn geklickt, dann wird Seite neu geladen */}
+            <Route path="/" element={<Home />}> </Route>
+            <Route path="/about" element={<About />}> </Route>
+            <Route path="/products" element={<Products />}> </Route>
+
+            {/* Route für Products   zu einzelnen Produkten */}
+            <Route path="/products/:name" element={<ProductsDetails />} />
+
+          </Routes>
+
+        </BrowserRouter>
+
+{/*         <Footer></Footer>
+ */}
+      </>
+
+
+
     </div>
   );
 }
