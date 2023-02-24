@@ -12,6 +12,10 @@ import "./Products.scss";
 // import dataArrObj
 import dataArrObj from "../data/Data.jsx";
 
+// import Schablone Item
+import ProductsSchabloneItem from "../components/productsSchabloneItem/ProductsSchabloneItem.jsx";
+
+
 
 // sfc
 const Products = () => {
@@ -33,7 +37,7 @@ const Products = () => {
 
             <h2> hallo</h2>
 
-            <article style={ { backgroundImage: ` url(${imgSrc}) ` } }  >
+            <article /* style={ { backgroundImage: ` url(${imgSrc}) ` } } */  >
                 <p >image als hintergrund</p>
                 <h2>Jenson</h2>
                 <p>link bauen</p>
@@ -41,6 +45,15 @@ const Products = () => {
                 <Link to="/products/Jenson"> Shop now zu Jenson </Link>
 
                 <ButtonShopNow> </ButtonShopNow>
+
+{/* davor // ! .map drüber lassen  und um alles   { }  herum, da js */}
+                <ProductsSchabloneItem
+                style={{ backgroundImage: `url(${imgSrc2})` }}
+                titel={dataArrObj.dataArrObj[0].productTitel}
+                /* titel={weg zu titel im map} */
+                to={`/products/${dataArrObj.dataArrObj[0].productTitel}`}
+
+                ></ProductsSchabloneItem>
 
             </article>
 

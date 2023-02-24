@@ -61,7 +61,7 @@ for (let i = 0; i < productTitelArr.length; i++){
 
 // sfc
 export {dataArrObj}
- export default { dataArrObj}
+export default { dataArrObj}
 
 
 /* 
