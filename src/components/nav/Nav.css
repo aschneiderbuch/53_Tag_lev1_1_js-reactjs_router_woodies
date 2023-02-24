@@ -1,3 +1,19 @@
-.sec_Nav > h2 {
-  color: red;
+.sec_Nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 90vw;
+  align-items: center;
+  margin: auto;
+  padding: 10px 0 0 0;
+}
+.sec_Nav article:nth-of-type(2) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.sec_Nav article:nth-of-type(2) a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgba(34, 34, 34, 0.75);
 }/*# sourceMappingURL=Nav.css.map */

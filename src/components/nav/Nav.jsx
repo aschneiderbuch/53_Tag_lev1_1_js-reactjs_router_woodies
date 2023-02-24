@@ -1,7 +1,8 @@
 // import Library Link
 import { Link } from "react-router-dom";
 
-
+// import img
+import logo from "../../img/Logo.png";
 
 // import css
 import "./Nav.scss";
@@ -9,19 +10,20 @@ import "./Nav.scss";
 
 // sfc
 const Nav = () => {
-    return ( 
+    return (
 
         <section className="sec_Nav">
-        
-        <h2> Nav WOODIES </h2>
 
-        <Link to="/">Home</Link>
-        <Link to="/about">About Us</Link>
-        <Link to="/products">Products</Link>
-
+            <article>
+                <img src={logo} alt="" />
+            </article>
+            <article>
+                <Link to="/">Home</Link>
+                <Link to="/about">About Us</Link>
+                <Link to="/products">Products</Link>
+            </article>
         </section>
-
-     );
+    );
 }
- 
+
 export default Nav;

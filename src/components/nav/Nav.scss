@@ -1,6 +1,27 @@
 .sec_Nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90vw;
+    align-items: center;
 
-    >h2 {
-        color: red;
+    margin: auto; // mittig auf Seite
+
+    padding: 10px 0 0 0;
+
+    article:nth-of-type(2) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+
+
+        a{
+            padding-left: 20px;
+
+            text-decoration: none;
+            color: rgb(34, 34, 34,0.75);
+        }
     }
+
 }

@@ -2,8 +2,8 @@
 import { useParams } from "react-router-dom";
 
 
-
-
+// import Data
+import dataArrObj from "../data/Data.jsx"
 
 
 // sfc
@@ -12,10 +12,15 @@ const ProductsDetails = () => {
     const params = useParams();
     console.log(params);
 
-    if (params.name == "Jenson"){
+    if (params.name ==="Jenson"){
         console.log("in if");
     console.log(params.name); 
     }
+    console.log(dataArrObj);
+    const data = dataArrObj.dataArrObj[0].imgSrc;
+    console.log(data);
+
+
 
     return (
 
@@ -24,6 +29,9 @@ const ProductsDetails = () => {
 
 
             <h1>hallo ich params   zu den einzelnen Produkten  du bis bei {params.name}</h1>
+
+        
+
 
         </>
 
