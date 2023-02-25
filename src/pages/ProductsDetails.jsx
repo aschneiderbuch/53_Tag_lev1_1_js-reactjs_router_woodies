@@ -11,11 +11,13 @@ const ProductsDetails = () => {
 
     const params = useParams();
     console.log(params);
-
-    if (params.name ==="Jenson"){
+let text =""
+    if (params.name =="Jenson"){
         console.log("in if");
     console.log(params.name); 
-    }
+    text = "verstehen sie spaß "
+
+    } else{}
     console.log(dataArrObj);
     const data = dataArrObj.dataArrObj[0].imgSrc;
     console.log(data);
@@ -30,6 +32,7 @@ const ProductsDetails = () => {
 
             <h1>hallo ich params   zu den einzelnen Produkten  du bis bei {params.name}</h1>
 
+<h1>{text}</h1>
         
 
 

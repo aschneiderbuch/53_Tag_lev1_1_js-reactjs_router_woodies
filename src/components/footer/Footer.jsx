@@ -20,7 +20,8 @@ const Footer = () => {
 <article>
 <p></p>  {/* macht den Style Strich */}
 
-<img src={logo} alt="Firmen logo Woodies" /><p>(012) 8967453</p>
+<img src={logo} alt="Firmen logo Woodies" />
+<p>(012) 8967453</p>
 <p>woodies@gmail.com</p>
 <p>Jakarta, Indonesia</p>
 </article>
