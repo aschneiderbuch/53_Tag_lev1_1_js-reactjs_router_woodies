@@ -30,7 +30,7 @@ let text =""
             {/* // !! hier nie    if       sondern nur   ?  und  :   */}
 
 
-            <h1>hallo ich params   zu den einzelnen Produkten  du bis bei {params.name}</h1>
+            <h1 >hallo ich params   zu den einzelnen Produkten  du bis bei {params.name}</h1>
 
 <h1>{text}</h1>
         

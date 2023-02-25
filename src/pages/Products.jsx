@@ -34,6 +34,8 @@ const Products = () => {
 
         <section className="sec_Products">
 
+
+
             <article> 
                 <img src={Logo_klein} alt="Logo klein" />
                 <h2 className="h2_Products">What we have</h2>  
